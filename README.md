@@ -62,6 +62,24 @@ module.exports = {
 }
 ```
 
+
+## Available Options
+
+- **`option1`** option1
+- **`option2`** option2
+- **`option3`** option3
+
+```js
+const options = {
+  option1: ...,
+  option2: ...,
+  option3: ...,
+};
+
+Vue.use(VueComponent, options)
+```
+
+
 ## Available Methods
 
 - [method1](#method1)
