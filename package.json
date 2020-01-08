@@ -1,6 +1,6 @@
 {
   "name": "vue2-component",
-  "description": "",
+  "description": "A simple Vue 2 component",
   "version": "1.0.0",
   "author": {
     "name": "Dmitry Selikhov",
@@ -13,7 +13,10 @@
     "vue2",
     "vuejs2"
   ],
-  "main": "dist/index.umd.min.js",
+  "main": "dist/vue2-component.umd.js",
+  "browser": "dist/vue2-component.common.js",
+  "unpkg": "dist/vue2-component.umd.min.js",
+  "jsDelivr": "dist/vue2-component.umd.min.js",
   "files": [
     "dist/**/*.js"
   ],
@@ -29,7 +32,7 @@
   "homepage": "https://github.com/idimetrix/vue2-component#readme",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --dest 'dist' 'src/component/index.js'",
+    "build": "vue-cli-service build --target lib --dest 'dist' 'src/component/index.js' --mode production --report",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "prepare": "npm run build"
